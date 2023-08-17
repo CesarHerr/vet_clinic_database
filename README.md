@@ -54,11 +54,84 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- GETTING STARTED -->
+Coming Soon.
+<!-- 
+- [Live Demo Link](<replace-with-your-deployment-URL>) -->
 
-<!-- AUTHORS -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, Clone this repository to your desired folder.
+
+### Prerequisites
+
+In order to run this project you need:
+
+Install Postgress DB
+Example command in linunx mint or Ubbuntu:
+
+```sh
+  sudo apt install postgresql postgresql-contrib
+```
+Others OS Options follow https://www.postgresql.org/
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone https://github.com/CesarHerr/vet_clinic_database.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd vet_clinic_database.git
+  npm install
+```
+### Usage
+
+Coming Soon.
+<!-- To run the project, execute the following command: -->
+
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
+
+### Run tests
+
+Coming Soon.
+
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
+
+### Deployment
+
+Coming Soon.
+<!-- You can deploy this project using: -->
+
+<!--
+Example:
+
+```sh
+
+```
+ -->
+
 
 ## 👥 Author <a name="authors"></a>
 
@@ -73,8 +146,6 @@
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Add more tables]**
 - [ ] **[Add more data]**
