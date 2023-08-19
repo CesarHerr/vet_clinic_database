@@ -121,11 +121,8 @@ ve.name as vet_name, age, date_of_graduation from animals a join species s on a.
 join visits vi on vi.animal_id = a.id
 join vets ve on ve.id = vi.vet_id order by visited_date desc limit 1;
 
-select count(visited_date) as non_specialist_visit from vets ve left join specializations z on ve.id = z.vet_id
-left join species s on s.id = z.species_id
-join visits vi on vi.vet_id = ve.id 
-join animals a on a.id = vi.animal_id where (s.name = 'Pokemon' and a.name like '%mon')
-or (s.name = 'Digimon' and a.name not like '%mon') or (s.name is null);
+select count(v2."name") as non_specialist_visit  from animals a join visits v on a.id = v.animal_id join vets v2 on v2.id  = v.vet_id  
+join species s2 on s2.id = a.species_id  full join specializations s on s.vet_id = v2.id and a.species_id = s.species_id where s.species_id is null;
 
 select s.name as specie, count(s.name)  from vets ve join visits vi on ve.id = vi.vet_id
 join animals a on a.id = vi.animal_id
