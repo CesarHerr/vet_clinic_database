@@ -127,3 +127,16 @@ join species s2 on s2.id = a.species_id  full join specializations s on s.vet_id
 select s.name as specie, count(s.name)  from vets ve join visits vi on ve.id = vi.vet_id
 join animals a on a.id = vi.animal_id
 join species s on s.id = a.species_id where ve.name='Maisy Smith' group by s.name order by count desc limit 1;
+
+
+explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;
+
+create index idx_animal_id on visits (animal_id);
+
+explain analyze SELECT * FROM visits where vet_id = 2;
+
+create index idx_vet_id on visits (vet_id);
+
+explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+create index idx_email on owners (email);
