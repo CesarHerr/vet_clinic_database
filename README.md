@@ -30,6 +30,8 @@
 
 **[Vet Clinic Database]** In this project, I use a relational database to create the initial data structure for a vet clinic. I will create a table to store animals' information, insert some data into it, and query it.
 
+![diagram](/vet_clinic%20-%20public.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
